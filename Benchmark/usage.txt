@@ -1,0 +1,3 @@
+Run the code below on terminal (Due to the execution time nohup is recomended)
+ 
+python Opt_Benchmark.py --pdb 7t9k_alfa1_rbd_relaxed.pdb --chain D --unbind A_D --constraints False --weight 0 --decision MC --n_cycle 10 &
