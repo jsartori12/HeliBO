@@ -1,5 +1,6 @@
-# Peptide-Optimization-Cycle
-
+# Helical Binder Optimizer (HeliBO)
+# Description
+HeliBO is a python script that uses the pyRosetta software to optimize the free binding energy of helical peptides to a specific target. This is done by iteratively optimizing the peptide using the Rosetta software's Design function. At each optimization round, the peptide is selected according to the criteria defined by the user, who can choose between local search and Monte Carlo. In addition, the script has the option of activating a composition constraint in order to prioritize the selection of residues with a high propensity to form an α-helix using AddHelixSequenceConstraints Mover, which can be used after applying a weight to the aa_composition energy term. The user can define the weight they want to give to the aa_composition term, where higher weights try to further prioritize the selection of those residues with a high propensity to form an α-helix.
 
 
 # Usage
