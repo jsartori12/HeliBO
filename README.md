@@ -3,6 +3,44 @@
 HeliBO is a python script that uses the pyRosetta software to optimize the binding free energy of helical peptides to a specific target. This is done by iteratively optimizing the peptide using the Rosetta software's Design function. At each optimization round, the peptide is selected according to the criteria defined by the user, who can choose between local search and Monte Carlo. In addition, the script has the option of activating a composition constraint in order to prioritize the selection of residues with a high propensity to form an α-helix using AddHelixSequenceConstraints Mover, which can be used after applying a weight to the aa_composition energy term. The user can define the weight they want to give to the aa_composition term, where higher weights try to further prioritize the selection of those residues with a high propensity to form an α-helix.
 
 
+
+
+# Installing dependencies
+
+## Getting started
+
+First of all, you must download PyRosetta. To download , you need to get a license.
+<br />
+License and Downloads links:
+<br />
+[License](https://www.rosettacommons.org/software/license-and-download)
+<br />
+[PyRosetta4 Download](https://graylab.jhu.edu/download/PyRosetta4/archive/release/)
+
+
+
+## Installing PyRosetta
+### After downloading, unzip PyRosetta's and enter the setup directory to install it
+```
+tar -xvzf PyRosetta[release].tar.bz2
+cd PyRosetta*/setup
+python3 setup.py install
+```
+## Installing aditional Python libs
+```
+pip install pandas
+pip install numpy
+```
+
+Additional help for downloading and installing and PyRosetta (source:Sari Sabban youtube channel )
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/UEaFmUMEL9c/0.jpg)](https://www.youtube.com/watch?v=UEaFmUMEL9c)
+
+
+## Download the repository in your directory
+
+
+
 # Usage
 
 python Optimization_cycle.py --pdb  --chain  --unbind  --constraints  --weight  --decision  --n_cycle 
