@@ -40,6 +40,12 @@ Additional help for downloading and installing and PyRosetta (source:Sari Sabban
 ## Download the repository in your directory
 
 
+```
+cd your_directory
+git clone https://github.com/jsartori12/HeliBO.git
+```
+
+
 
 # Usage
 
